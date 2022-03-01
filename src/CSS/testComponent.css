@@ -1,0 +1,130 @@
+*{
+    text-decoration: none;
+}
+
+
+/* RISING SUN */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.circle {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 60%;
+    animation-name: rise;
+    animation-duration: 100s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    /* background: radial-gradient(yellow, yellow) */
+    /* Delay the animation */
+  }
+
+  /* @keyframes rise {
+    from {background-color: red;}
+    to {transform: translateY(-1000px);
+        background-color: yellow;}
+  } */
+
+/* RADIAT FROM THE CENTER OF THE CIRCLE */
+
+     @keyframes rise {
+    from {background-color: red;
+        -webkit-mask-image: -webkit-gradient(linear, left top, 
+        left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));}
+
+    to {transform: translateY(-1000px);
+        background-color: yellow;}
+        
+        0%   {background-color: red;}
+        10%  {background-color: orange}
+        20%  {background-color: gold;}
+        50% {background-color: yellow;}
+  }
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* BACKGROUND COLOR */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+body {
+    background-color: rgb(201,201,209);
+    animation-name: to_day;
+    animation-duration: 30s;
+  }
+
+  @keyframes to_day {
+    0%   {background-color: rgb(201,201,209)}
+    25%  {background-color: black}
+    50%  {background-color: violet;}
+    100% {background-color: skyblue;}
+  }
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+.ground{
+    height: 10px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    margin-top: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .fading {
+    height:200px;
+    width:100%;
+    background: black;
+    animation: fading 30s infinite;
+    animation-fill-mode: forwards;
+    -webkit-animation: fading 30s infinite;
+    border-radius:5px;
+}
+
+@keyframes fading {
+    0%   { background: black; }
+    33%  { background: red; }
+    66%  { background: blue; }
+    100% { background: black; }
+}
+
+@-webkit-keyframes fading {
+    0%   { background: black; }
+    33%  { background: red; }
+    66%  { background: blue; }
+    100% { background: black; }
+}
+@keyframes opacityfading {
+    0%   { opacity: 0; }
+    33%  { opacity: 1; }
+    66%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes opacityfading {
+    0%   { opacity: 0; }
+    33%  { opacity: 1; }
+    66%  { opacity: 0; }
+    100% { opacity: 1; }
+} */
