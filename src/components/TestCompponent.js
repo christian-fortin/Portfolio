@@ -6,9 +6,13 @@ import { Route, Routes, Link } from 'react-router-dom';
 const TestCompponent = () => {
   return (
     <div>
-        <h1>TEST</h1>
-        <div className='ground'></div>
-        <div className='circle'></div>
+        <div className='self_portrate'>
+          <img className='self_portrate_img'src="HeadShot_monet.png" alt="self portrait" />
+        </div>
+        <div className='sun'></div>
+        <div id='monet_grass_img_div'>
+          <img src="/monet_grass-removebg-preview.png" alt="monet grass"  id='monet_grass_img'/>
+        </div>
     </div>
   );
 };
