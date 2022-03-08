@@ -1,5 +1,5 @@
 import React from 'react';
-import '../CSS/general.css';
+import '../CSS/home.css';
 import bgImage from '../images/portfolioBackground.mp4';
 import { Route, Routes, Link } from 'react-router-dom';
 
@@ -7,80 +7,42 @@ import { Route, Routes, Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <div className="grid-container">
-          <div className="video-container">
-            <div className="color-overlay"></div>
-            <video id='video' autoPlay loop muted width="100%" height="100%">
-              <source src={bgImage} type="video/mp4" />
-            </video>
+  <div>
+     <div id="background_color">
+      <div class="stars"></div>
+      <div class="twinkling"></div>
+      <div class="clouds"></div>
+      <div className="info">
+        {/* <img className='self_portrate_img'src="HeadShot_monet.png" alt="self portrait" /> */}
+        <div className="about_me_div">
+          <div className="about_me_header">
+            <h1>Home</h1>
           </div>
-        <div id='for_media_query'>
-          <div className="wrapper">
-            <div className="box a">
-              <p className="text" id='home_name'>Christian Fortin</p>
-            </div>
-            <Link to={`/Aboutme`}>
-              <div className="box b">
-                <p className="text">About Me</p>{' '}
-              </div>
-            </Link>
-            <Link to={`/Projects`}>
-              <div className="box c">
-                <p className="text">Projects</p>
-              </div>
-            </Link>
-            <a
-              href="https://github.com/christian-fortin"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className="box d">
-                <p className="text">LinkedIn</p>
-              </div>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/christian-fortin/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className="box e">
-                <p className="text">GitHub</p>
-              </div>
-            </a>
-            <a
-              href="https://docs.google.com/document/d/1RTuiJZeeaS0zX6b9pzjtCkSRCgmj31PcRB6Sq4Yf0IA/edit"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className="box f">
-                <p className="text">Resume</p>
-              </div>
-            </a>
-          </div>
+          <div id=""></div>
+          <div className="about_me_text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Necessitatibus excepturi illo id autem tempore repudiandae
+              assumenda magnam non cum eaque laudantium praesentium veritatis
+              deserunt minus ipsum, vitae maiores quis esse quaerat unde
+              molestias? Accusantium aut quam blanditiis quisquam.
+              Necessitatibus, quis labore inventore dolore sed ipsum magni
+              quibusdam ducimus tempore dolorum.
+            </p>
           </div>
         </div>
-    
-        //   {/* <div class="section">
-        //     <h1>Welcome To Paradise</h1>
-        //     <div class="video-container">
-        //       <div class="color-overlay"></div>
-        //       <video autoPlay loop muted>
-        //         <source src={bgImage} type="video/mp4" />
-        //       </video>
-        //     </div>
-        //   </div>
-        //   <div style={{height:"400px;width:100%"}}>
-        //     <p>
-        //       Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quod
-        //       soluta natus. Magni tempora animi illo ea accusamus ex deserunt odio
-        //       facere deleniti molestiae qui eaque in illum praesentium sunt iste
-        //       accusantium nobis repellat aspernatur alias, architecto consectetur
-        //       voluptate dolore! Saepe, enim rem nam dolorem tempore blanditiis
-        //       perspiciatis repellat architecto.
-        //     </p>
-        //   </div> */}
-        // // </div>
+      </div>
+
+      <div className="sun_filler"></div>
+      <div id="monet_grass_img_div">
+        <img
+          src="/monet_grass-removebg-preview.png"
+          alt="monet grass"
+          id="monet_grass_img"
+        />
+      </div>
+    </div>
+  </div>
       );
 };
-
 export default Home;
