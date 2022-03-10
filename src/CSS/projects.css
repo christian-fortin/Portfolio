@@ -1,0 +1,276 @@
+*{
+    margin: 0%;
+}
+
+
+
+
+.sun_project {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(201,201,209);
+    display: block;
+    margin-left: 300px;
+    position: relative;
+    top: 650px;
+    z-index: 4;
+    animation: fadeSun 1s linear fowards;
+}
+
+@keyframes fadeSun {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+/* BACKGROUND COLOR */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+#saltanat_project{
+    background-color: rgb(119, 194, 235);
+    height: 100000000px;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+/* GROUND */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#monet_grass_img_div_project{
+    width: 100%;
+    height: 40%;
+    margin: 0%;
+    padding-top: 10px;
+}
+#monet_grass_img_project{
+    width: 100%;
+    height: 100%;
+    margin-top: 30%;
+    margin: 0%;
+    position:fixed;
+    top: 150px;
+    bottom:0px;
+    z-index: 5;
+    /* animation: img_opacity 4s forwards; */
+}
+/* 
+@keyframes img_opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+} */
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+/* INFO */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.info_project{
+    height: 375px;
+    width: 800px;
+    border-radius: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    /* Why wont this stay? */
+    backdrop-filter: blur(6px);
+    /* position: absolute;
+    top: 50px;
+    right: 100px; */
+    box-shadow: 4px 4px 4px 1px black;
+    z-index: 7;
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+    animation: toCenter .9s linear forwards;
+    animation-delay: 1s;
+}
+
+@keyframes toCenter{
+    from {top: 50px;
+        right: 100px;}
+    to {transform: translateX(-50%);
+        }
+}
+/* HAVE TO FIGURE OUT HOW TO CENTER IT */
+
+
+
+.about_me_text_project{
+    text-indent: 50px;
+    margin: 20px;
+    flex-wrap: wrap;
+    color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+    line-height:1.4 ;
+    font-size: 25px;
+}
+
+.about_me_header_project{
+    margin: 10px;
+    color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.projects_container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* .about_me_div_project_2{
+    margin-top: 5000px;
+} */
+
+.info_project_card_1{
+    height: 375px;
+    width: 800px;
+    border-radius: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    /* Why wont this stay? */
+    backdrop-filter: blur(6px);
+    position: absolute;
+    margin-top: 700px;
+    margin-right: 100px;
+    margin-left: 100px;
+    animation: toCenter .9s linear forwards;
+    box-shadow: 4px 4px 4px 1px black;
+    z-index: 1;
+}
+
+/* BIRDS */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.bird {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
+    background-size: auto 100%;
+    width: 88px;
+    height: 125px;
+    transform: background-position;
+    animation-name: fly-cycle;
+    animation-timing-function: steps(10);
+    animation-iteration-count: infinite;
+    z-index: 10;
+}
+.bird--one {
+    animation-duration: 1s;
+    animation-delay: -0.5s;
+    z-index: 10;
+}
+.bird--two {
+    animation-duration: 0.9s;
+    animation-delay: -0.75s;
+    z-index: 10;
+}
+.bird--three {
+    animation-duration: 1.25s;
+    animation-delay: -0.25s;
+    z-index: 10;
+}
+.bird--four {
+    animation-duration: 1.1s;
+    animation-delay: -0.5s;
+    z-index: 10;
+}
+.bird-container {
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    transform: scale(0) translateX(-10vw);
+    will-change: transform;
+    animation-name: fly-right-one;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 10;
+}
+.bird-container--one {
+    animation-duration: 15s;
+    animation-delay: 0;
+    z-index: 10;
+}
+.bird-container--two {
+    animation-duration: 16s;
+    animation-delay: 1s;
+    z-index: 10;
+}
+.bird-container--three {
+    animation-duration: 14.6s;
+    animation-delay: 9.5s;
+    z-index: 10;
+}
+.bird-container--four {
+    animation-duration: 16s;
+    animation-delay: 10.25s;
+    z-index: 10;
+}
+@keyframes fly-cycle {
+    100% {
+        background-position: -900px 0;
+   }
+}
+@keyframes fly-right-one {
+    0% {
+        transform: scale(0.3) translateX(-10vw);
+   }
+    10% {
+        transform: translateY(2vh) translateX(10vw) scale(0.4);
+   }
+    20% {
+        transform: translateY(0vh) translateX(30vw) scale(0.5);
+   }
+    30% {
+        transform: translateY(4vh) translateX(50vw) scale(0.6);
+   }
+    40% {
+        transform: translateY(2vh) translateX(70vw) scale(0.6);
+   }
+    50% {
+        transform: translateY(0vh) translateX(90vw) scale(0.6);
+   }
+    60% {
+        transform: translateY(0vh) translateX(110vw) scale(0.6);
+   }
+    100% {
+        transform: translateY(0vh) translateX(110vw) scale(0.6);
+   }
+}
+@keyframes fly-right-two {
+    0% {
+        transform: translateY(-2vh) translateX(-10vw) scale(0.5);
+   }
+    10% {
+        transform: translateY(0vh) translateX(10vw) scale(0.4);
+   }
+    20% {
+        transform: translateY(-4vh) translateX(30vw) scale(0.6);
+   }
+    30% {
+        transform: translateY(1vh) translateX(50vw) scale(0.45);
+   }
+    40% {
+        transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
+   }
+    50% {
+        transform: translateY(0vh) translateX(90vw) scale(0.45);
+   }
+    51% {
+        transform: translateY(0vh) translateX(110vw) scale(0.45);
+   }
+    100% {
+        transform: translateY(0vh) translateX(110vw) scale(0.45);
+   }
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* monet tree painting? */
