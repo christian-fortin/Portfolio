@@ -10,7 +10,7 @@
     border-radius: 50%;
     background-color: rgb(201,201,209);
     display: block;
-    margin-left: 200px;
+    margin-left:300px;
     position: relative;
     top: 750px;
     z-index: 4;
@@ -26,7 +26,7 @@
     /* animation-delay: 2s; */
     /* WHY IS THIS NOT DELAYING? */
 	animation:
-		sunrise 100s linear forwards,
+		sunrise 60s linear forwards,
 		rays 2s infinite linear;
 }
 
@@ -71,7 +71,7 @@
 #saltanat{
     background-color: black;
     animation-name: to_day;
-    animation-duration: 30s;
+    animation-duration: 25s;
     animation-fill-mode: forwards;
     z-index: -1;
     height: 100vh;
@@ -95,17 +95,15 @@
 /* GROUND */
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-#monet_grass_img_div{
+#monet_grass_img_div_ab{
     width: 100%;
     height: 40%;
-    margin: 0%;
-    padding-top: 40px;
+
 }
-#monet_grass_img{
+#monet_grass_img_ab{
     width: 100%;
     height: 100%;
-    margin-top: 40%;
-    margin: 0%;
+    margin-top: 7rem;
     position: absolute;
     z-index: 5;
     /* animation: img_opacity 4s forwards; */
@@ -307,4 +305,90 @@
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 
+
+/* ============================================================= */
+
+/* STARS AND SPACE */
+
+@keyframes move-twink-back_ab {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back_ab {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back_ab {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back_ab {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back_ab {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back_ab {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back_ab {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back_ab {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+
+.stars_ab, .twinkling_ab, .clouds_ab {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+  animation: fade_out_night 3s forwards;
+}
+
+.stars_ab {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:0;
+  animation: fade_out_night 3s forwards;
+}
+
+.twinkling_ab{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+  animation: fade_out_night 3s forwards;
+}
+
+.clouds_ab{
+    background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+    z-index:3;
+
+  -moz-animation:move-clouds-back 200s linear infinite;
+  -ms-animation:move-clouds-back 200s linear infinite;
+  -o-animation:move-clouds-back 200s linear infinite;
+  -webkit-animation:move-clouds-back 200s linear infinite;
+  animation:move-clouds-back 200s linear infinite;
+  animation: fade_out_night 3s forwards;
+}
 /* monet tree painting? */
+
+@keyframes fade_out_night {
+    from {opacity: 1}
+    to {opacity: 0}
+}

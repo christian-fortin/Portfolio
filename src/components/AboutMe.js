@@ -6,6 +6,9 @@ import { Route, Routes, Link } from 'react-router-dom';
 const AboutMe = () => {
   return (
     <div id='saltanat'>
+      <div className="stars_ab"></div>
+      <div className="twinkling_ab"></div>
+      <div className="clouds_ab"></div>
         <div className='info'> 
             {/* <img className='self_portrate_img'src="HeadShot_monet.png" alt="self portrait" /> */}
           <div className='about_me_div'>
@@ -42,8 +45,8 @@ const AboutMe = () => {
 
 
         <div className='sun'></div>
-        <div id='monet_grass_img_div'>
-          <img src="/monet_grass-removebg-preview.png" alt="monet grass"  id='monet_grass_img'/>
+        <div id='monet_grass_img_div_ab'>
+          <img src="/monet_grass-removebg-preview.png" alt="monet grass"  id='monet_grass_img_ab'/>
         </div>
     </div>
   );
