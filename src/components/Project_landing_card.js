@@ -10,7 +10,9 @@ const Project_landing_card = () => {
               <h1>Projects</h1>
             </div>
             <div className="about_me_text_project">
-             <a className='no_blue_a' href='###'><p> - PressTime - Game</p></a> 
+             <a className='no_blue_a' href='https://github.com/christian-fortin/SEI9-28_Project_1' target='_blank' rel='noreferrer'><p className='plc_text'> - PressTime - Game</p></a> 
+             <a className='no_blue_a' href='###' target='_blank' rel='noreferrer'><p className='plc_text'> - MyFoodBlog - Blog</p></a> 
+             <a className='no_blue_a' href='###' target='_blank' rel='noreferrer'><p className='plc_text'> - LoFive - Music Sharing</p></a> 
             </div>
           </div>
         </div>

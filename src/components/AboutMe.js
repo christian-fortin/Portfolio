@@ -17,7 +17,13 @@ const AboutMe = () => {
               </div>     
               <div id=''></div>
           <div className='about_me_text'>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus excepturi illo id autem tempore repudiandae assumenda magnam non cum eaque laudantium praesentium veritatis deserunt minus ipsum, vitae maiores quis esse quaerat unde molestias? Accusantium aut quam blanditiis quisquam. Necessitatibus, quis labore inventore dolore sed ipsum magni quibusdam ducimus tempore dolorum.</p>
+            <h3 className='info-sub-title'>Education</h3>
+            <p> - EagleHill School - HighSchool - Graduated 2016</p>
+            <p> - Pace University - B.S. Biology - Graduated 2021</p>
+            <p> - General Assembly - Software Engineering - Graduated 2022</p>
+            <h3 className='info-sub-title'>Other Interests</h3>
+            <p> - Chess, Skiing, Soccer, Video Games, Cooking, Biology, Art</p>
+            
           </div>
         </div>
         </div>

@@ -26,7 +26,7 @@
     /* animation-delay: 2s; */
     /* WHY IS THIS NOT DELAYING? */
 	animation:
-		sunrise 60s linear forwards,
+		sunrise 30s linear forwards,
 		rays 2s infinite linear;
 }
 
@@ -71,7 +71,7 @@
 #saltanat{
     background-color: black;
     animation-name: to_day;
-    animation-duration: 25s;
+    animation-duration: 14s;
     animation-fill-mode: forwards;
     z-index: -1;
     height: 100vh;
@@ -164,16 +164,21 @@
     margin: 10px;
     flex-wrap: wrap;
     color: whitesmoke;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Raleway', monospace;
     font-size: 25px;
 }
 
 .about_me_header{
     margin: 10px;
     color: whitesmoke;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Raleway', monospace;
     text-decoration: underline;
     margin-bottom: 1rem;
+}
+
+.info-sub-title{
+    font-family: 'Raleway', monospace;
+    text-decoration: underline;
 }
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 

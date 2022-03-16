@@ -6,6 +6,7 @@ import AboutMe from './components/AboutMe';
 import Home from './components/Home';
 import TestCompponent from './components/TestCompponent';
 import NavBar from './components/NavBar';
+import Projects from './components/Projects'
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/AboutMe" element={<AboutMe/>}/>
-          {/* <Route path="/Projects" element={<Projects/>}/> */}
+          <Route path="/Projects" element={<Projects/>}/>
           <Route path="/TestCompponent" element={<TestCompponent/>}/>
         </Routes>
     </div>

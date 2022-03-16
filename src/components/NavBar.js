@@ -20,11 +20,11 @@ const NavBar = () => {
             
           </li>
           <li>
-            <Link to='/'><p className="menu__item">Education</p></Link>
+            <Link to='/Projects'><p className="menu__item">Projects</p></Link>
           </li>
-          <li>
+          {/* <li>
           <Link to='/'><p className="menu__item">Projects</p></Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

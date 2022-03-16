@@ -59,16 +59,16 @@
     margin: 0;
     padding: 80px 0;
     list-style: none;
-    background-color: #ECEFF1;
+    background-color: rgb(236, 239, 241, .4);
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     transition-duration: .25s;
-    opacity: .4;
+    /* opacity: .4; */
   }
   .menu__item {
     display: block;
     padding: 12px 24px;
-    color: #333;
-    font-family: 'Roboto', sans-serif;
+    color: black;
+     font-family: 'Raleway', monospace;
     font-size: 20px;
     font-weight: 800;
     text-decoration: none;
@@ -76,7 +76,8 @@
     opacity: 1 !important;
   }
   .menu__item:hover {
-    background-color: #CFD8DC;
+    background-color: black;
+    color: white;
   }
 
 

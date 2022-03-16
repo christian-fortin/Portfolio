@@ -21,24 +21,18 @@ const Home = () => {
           <div id=""></div>
           <div className="about_me_text">
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Necessitatibus excepturi illo id autem tempore repudiandae
-              assumenda magnam non cum eaque laudantium praesentium veritatis
-              deserunt minus ipsum, vitae maiores quis esse quaerat unde
-              molestias? Accusantium aut quam blanditiis quisquam.
-              Necessitatibus, quis labore inventore dolore sed ipsum magni
-              quibusdam ducimus tempore dolorum.
+            Since I was little I have realized that I think differently from other people, and I bring that into software engineering with a passion. I went through school as a biology student training my scientific mind while using my work ethic, and outside the box analytical thinking  to solve problems. My scientific mind injects curiosity and adventure into the workplace. I am flexible, communicative, and sensible when working with others. 
             </p>
           </div>
         </div>
       </div>
 
       <div className="sun_filler"></div>
-      <div id="monet_grass_img_div">
+      <div id="monet_grass_img_div_home">
         <img
           src="/monet_grass-removebg-preview.png"
           alt="monet grass"
-          id="monet_grass_img"
+          id="monet_grass_img_home"
         />
       </div>
     </div>
