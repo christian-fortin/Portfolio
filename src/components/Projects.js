@@ -7,8 +7,15 @@ const projects = () => {
   return (
     <div id="saltanat_project">
       <div className="projects_container">
-        <Project_landing_card/>
-        <ProjectCardTP/>
+        <h1>Projects</h1>
+        <div className='projectList'>
+       
+          <p className='project_p'>PressTime</p>
+          <p className='project_p'>MyFoodBlog</p>
+          <p className='project_p'>LoFive</p>
+          <p className='project_p'>WhatIsThis?</p>
+    
+        </div>
       </div>
       <div class="bird-container bird-container--one">
         <div class="bird bird--one"></div>
