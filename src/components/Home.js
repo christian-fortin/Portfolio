@@ -21,7 +21,7 @@ const Home = () => {
           <div id=""></div>
           <div className="about_me_text">
             <p>
-            Since I was little I have realized that I think differently from other people, and I bring that into software engineering with a passion. I went through school as a biology student training my scientific mind while using my work ethic, and outside the box analytical thinking  to solve problems. My scientific mind injects curiosity and adventure into the workplace. I am flexible, communicative, and sensible when working with others. 
+            I have completed a B.S. in Biology,  training my scientific mind while using my work ethic and outside-the-box analytical thinking to solve problems. I have supplemented my Bachelor’s degree with a software engineering training certificate.  My scientific mind injects intellectual curiosity and creativity into software engineering.  I have strong communication, collaboration and multi-tasking skills. I am looking for an entry level job to combine the two skill sets I have built over the years.        
             </p>
           </div>
         </div>
